@@ -1,0 +1,43 @@
+<?php
+$z[0]=Array("global","",283,309);
+$z[0][4]=array();
+$z[0][4]['name']="cfg_webname";
+$z[1]=Array("global","",353,383);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_description";
+$z[2]=Array("global","",420,447);
+$z[2][4]=array();
+$z[2][4]['name']="cfg_keywords";
+$z[3]=Array("include","",1215,1250);
+$z[3][4]=array();
+$z[3][4]['filename']="head.htm";
+$z[4]=Array("global","",1519,1544);
+$z[4][4]=array();
+$z[4][4]['name']="cfg_cmsurl";
+$z[5]=Array("type","<li><a href=\"[field:typelink /]\">全部</a></li>",2379,2462);
+$z[5][4]=array();
+$z[5][4]['typeid']="12";
+$z[6]=Array("channel","\r\n        <li><a title=\"[field:typename/]\" href=\"[field:typelink/]\">[field:typename/]</a></li>\r\n        ",2472,2674);
+$z[6][4]=array();
+$z[6][4]['type']="son";
+$z[6][4]['typeid']="1";
+$z[6][4]['currentstyle']="<li><span>~typename~</a></span>";
+$z[7]=Array("arclist","\r\n            <li><em>[field:global name=autoindex runphp=\"yes\"]@me=@me;[/field:global]. </em><a href='[field:arcurl/]'>[field:title/]</a></li>\r\n            ",2955,3175);
+$z[7][4]=array();
+$z[7][4]['row']="8";
+$z[7][4]['titlelen']="40";
+$z[7][4]['typeid']="16";
+$z[8]=Array("arclist","\r\n      <li>\r\n        <div class=\"main_pic_shadow\"> <a href=\"[field:arcurl/]\" target=\"_blank\">\r\n          <div class=\"pc-eye-bg innerDiv\" data-img = 'true'> <img src=\"[field:litpic/]\" class=\"pc-image targetImg\"> </div>\r\n          </a>\r\n          <div class=\"main_prm\">\r\n            <div class=\"main_prm_left\">\r\n              <p><a href=\"[field:arcurl/]\" target=\"_blank\">[field:title/]</a></p>\r\n              <p>价格：<span>[field:jiage/]</span> 　编号：[field:bianhao/]</p>\r\n              <p>更新时间：[field:pubdate function='strftime(\"%Y-%m-%d\",@me)'/]</p>\r\n            </div>\r\n            <a href=\"[field:yanshi/]\" title=\"演示地址\" class=\"to_example\" target=\"_blank\">演示</a> </div>\r\n          <div class=\"pcwp\"> <a href=\"[field:arcurl/]\"><img src=\"[field:pic2/]\" height=\"176\"></a> </div>\r\n        </div>\r\n      </li>\r\n	  ",3312,4260);
+$z[8][4]=array();
+$z[8][4]['row']="12";
+$z[8][4]['titlelen']="60";
+$z[8][4]['addfields']="bianhao,jiage,pic2,yanshi";
+$z[8][4]['channelid']="17";
+$z[9]=Array("type","<a href=\"[field:typelink /]\">更多模版</a>",4296,4375);
+$z[9][4]=array();
+$z[9][4]['typeid']="1";
+$z[10]=Array("include","",4401,4436);
+$z[10][4]=array();
+$z[10][4]['filename']="foot.htm";
+
+?>

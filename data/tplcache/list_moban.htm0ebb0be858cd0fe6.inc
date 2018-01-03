@@ -1,0 +1,47 @@
+<?php
+$z[0]=Array("field","",338,357);
+$z[0][4]=array();
+$z[0][4]['name']="title";
+$z[1]=Array("global","",358,384);
+$z[1][4]=array();
+$z[1][4]['name']="cfg_webname";
+$z[2]=Array("field","",425,454);
+$z[2][4]=array();
+$z[2][4]['name']="keywords";
+$z[3]=Array("field","",494,552);
+$z[3][4]=array();
+$z[3][4]['name']="description";
+$z[3][4]['function']="html2text(@me)";
+$z[4]=Array("include","",1321,1356);
+$z[4][4]=array();
+$z[4][4]['filename']="head.htm";
+$z[5]=Array("global","",1625,1650);
+$z[5][4]=array();
+$z[5][4]['name']="cfg_cmsurl";
+$z[6]=Array("type","<li><a href=\"[field:typelink /]\">全部</a></li>",2485,2568);
+$z[6][4]=array();
+$z[6][4]['typeid']="12";
+$z[7]=Array("channel","\r\n        <li><a title=\"[field:typename/]\" href=\"[field:typelink/]\">[field:typename/]</a></li>\r\n        ",2578,2769);
+$z[7][4]=array();
+$z[7][4]['type']="son";
+$z[7][4]['currentstyle']="<li><span>~typename~</a></span>";
+$z[8]=Array("arclist","\r\n            <li><span>[field:pubdate function='strftime(\"%Y-%m-%d\",@me)'/]</span><a href='[field:arcurl/]'>[field:title/]</a></li>\r\n            ",3050,3259);
+$z[8][4]=array();
+$z[8][4]['row']="8";
+$z[8][4]['titlelen']="22";
+$z[8][4]['typeid']="16";
+$z[9]=Array("list","\r\n      <li>\r\n        <div class=\"main_pic_shadow\"> <a href=\"[field:arcurl/]\" target=\"_blank\">\r\n          <div class=\"pc-eye-bg innerDiv\" data-img = 'true'> <img src=\"[field:litpic/]\" class=\"pc-image targetImg\"> </div>\r\n          </a>\r\n          <div class=\"main_prm\">\r\n            <div class=\"main_prm_left\">\r\n              <p><a href=\"[field:arcurl/]\" target=\"_blank\">[field:title/]</a></p>\r\n              <p>价格：<span>[field:jiage/]</span> 　编号：[field:bianhao/]</p>\r\n              <p>更新时间：[field:pubdate function='strftime(\"%Y-%m-%d\",@me)'/]</p>\r\n            </div>\r\n            <a href=\"[field:yanshi/]\" title=\"演示地址\" class=\"to_example\" target=\"_blank\">演示</a> </div>\r\n          <div class=\"pcwp\"> <a href=\"[field:arcurl/]\"><img src=\"[field:pic2/]\" height=\"176\"></a> </div>\r\n        </div>\r\n      </li>\r\n	  ",3396,4343);
+$z[9][4]=array();
+$z[9][4]['pagesize']="12";
+$z[9][4]['titlelen']="36";
+$z[9][4]['addfields']="bianhao,jiage,pic2,yanshi";
+$z[9][4]['channelid']="17";
+$z[10]=Array("pagelist","",4446,4503);
+$z[10][4]=array();
+$z[10][4]['listitem']="index,end,pageno";
+$z[10][4]['listsize']="1";
+$z[11]=Array("include","",4542,4577);
+$z[11][4]=array();
+$z[11][4]['filename']="foot.htm";
+
+?>

@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge，chrome=1">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<meta name="renderer" content="webkit">
+<title>{dede:global.cfg_webname/}</title>
+<meta name="description" content="{dede:global.cfg_description/}" />
+<meta name="keywords" content="{dede:global.cfg_keywords/}" />
+<link rel="shortcut icon" href="favicon.ico">
+<link type="text/css" rel="stylesheet" href="/style/css/base.css" />
+<link type="text/css" rel="stylesheet" href="/style/css/master.css" />
+<link type="text/css" rel="stylesheet" href="/style/css/index.css" />
+<script type="text/javascript" src="/style/js/jquery-1.9.1.min.js"></script> 
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="/style/css/home_ie6.css" />
+<script src="/style/js/dd_belatedpng.js"></script>
+<script>
+	document.execCommand("BackgroundImageCache", false, true);
+    DD_belatedPNG.fix('.png');
+</script>
+<![endif]-->
+<!--[if lt IE 8]>
+<![endif]-->
+<!--[if lt IE 9]>
+<script src="/style/js/html5shiv.min.js"></script>
+<![endif]-->
+</head>
+<body class="body-help">
+{dede:include filename="head.htm"/}
+<div class="m_childmb">
+	<dl>
+    	{dede:type typeid='1'}<dt><a href="[field:typelink /]">全部模版</a></dt>{/dede:type}
+        {dede:channel typeid='1' currentstyle="<dd><a href='~typelink~' class='m_on'>~typename~</a></dd>"}
+        <dd><a href="[field:typelink/]">[field:typename/]</a></dd>
+        {/dede:channel}
+    </dl>
+</div>
+<div class="serc">
+  <div class="mainx">
+    <p class="tit"> <i>模板快速建站专家</i> <span>Template Quick Site Expert</span> </p>
+    <div class="tem_main_sea">
+      <div class="tem_main_sea_m">
+        <form  name="formsearch" id="formsearch"  action="{dede:global.cfg_cmsurl/}/plus/search.php">
+          <div class="tem_main_sea_m_l fl">
+            <input type="hidden" name="typeid" value="1" />
+            <input name="q" id="yh" type="text" autocomplete="off" value="请输入编号、行业关键词！" onfocus="if(value=='请输入编号、行业关键词！'){this.value='';}" onblur="if(!value){value=defaultValue}">
+          </div>
+          <div class="tem_main_sea_m_r fr">
+            <input type="submit" id="selectCase" value=""/>
+          </div>
+          <div class="clear"> </div>
+        </form>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+<div class="mainpc">
+  <div class="huace_left"> 
+    
+    <!--第一部分-->
+    
+    <div class="huace_left_conter">
+      <div class="huace_left_title"> 行业选择 </div>
+      <div class="huace_left_common">
+        {dede:type typeid='1'}<li><a href="[field:typelink /]">全部</a></li>{/dede:type}
+        {dede:channel type='son' typeid='1' currentstyle="<li><span>~typename~</a></span>"}
+        <li><a title="[field:typename/]" href="[field:typelink/]">[field:typename/]</a></li>
+        {/dede:channel}
+        </li>
+      </div>
+    </div>
+    
+    <!--第一部分--> 
+    
+    <div class="huace_left_conter mt20">
+      <div class="huace_left_title"> 教程 </div>
+      <dl class="txtScroll-left">
+        <div class="bd">
+          <ul class="infoList">
+            {dede:arclist row='8' titlelen='40' typeid='16'}
+            <li><em>[field:global name=autoindex runphp="yes"]@me=@me;[/field:global]. </em><a href='[field:arcurl/]'>[field:title/]</a></li>
+            {/dede:arclist}
+          </ul>
+        </div>
+      </dl>
+    </div>
+    
+  </div>
+  <div class="main_pc expand">
+    <ul id="pc_area">
+      {dede:arclist row='12' titlelen='60' addfields='bianhao,jiage,pic2,yanshi' channelid='17'}
+      <li>
+        <div class="main_pic_shadow"> <a href="[field:arcurl/]" target="_blank">
+          <div class="pc-eye-bg innerDiv" data-img = 'true'> <img src="[field:litpic/]" class="pc-image targetImg"> </div>
+          </a>
+          <div class="main_prm">
+            <div class="main_prm_left">
+              <p><a href="[field:arcurl/]" target="_blank">[field:title/]</a></p>
+              <p>价格：<span>[field:jiage/]</span> 　编号：[field:bianhao/]</p>
+              <p>更新时间：[field:pubdate function='strftime("%Y-%m-%d",@me)'/]</p>
+            </div>
+            <a href="[field:yanshi/]" title="演示地址" class="to_example" target="_blank">演示</a> </div>
+          <div class="pcwp"> <a href="[field:arcurl/]"><img src="[field:pic2/]" height="176"></a> </div>
+        </div>
+      </li>
+	  {/dede:arclist}
+    </ul>
+    <div class="gmore">{dede:type typeid='1'}<a href="[field:typelink /]">更多模版</a>{/dede:type}</div>
+  </div>
+  
+  
+{dede:include filename="foot.htm"/}
+</div>
+<link rel="stylesheet" href="/style/css/jquery.bigautocomplete.css" type="text/css" />
+<script type="text/javascript" src="/style/js/jquery.bigautocomplete.js"></script> 
+<style type="text/css">
+	.innerDiv{position:relative;overflow:hidden;}	
+</style>
+<script src="/style/js/demo.js"></script> 
+</body>
+</html>

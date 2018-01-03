@@ -1,0 +1,1 @@
+<li><em>[field:global name=autoindex runphp="yes"]@me=@me;[/field:global].</em><a href='[field:arcurl/]'>[field:title/]</a></li>

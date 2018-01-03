@@ -1,0 +1,1 @@
+<a href="[field:typelink /]">更多模版</a>

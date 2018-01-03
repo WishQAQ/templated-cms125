@@ -1,0 +1,35 @@
+<div class="site-head site-head-fixed ">
+  <div class="head-inner">
+    <div class="aitecms fl"><a href="/" class="aitecms-link"><img src="/style/images/logo.png" height="32"></a></div>
+    <ul class="site-nav fr">
+      <li class='nav-item'><a href="/" {dede:field name=typeid runphp="yes"}(@me=="")? @me=" class='nav-link-cur'":@me="";{/dede:field}>首页</a></li>
+      {dede:channel type='top' currentstyle="<li class='nav-item'><a href='~typelink~' class='nav-link nav-link-cur'>~typename~</a></li>"}
+      <li class='nav-item'><a class='nav-link' href='[field:typelink/]' >[field:typename/]</a></li>
+      {/dede:channel}
+    </ul>
+    
+    <div class="m-nav"><img src="/style/images/fl.png" width="50"></div>
+    
+  </div>
+</div>
+<div class="nav-box">
+	<ul>
+    	<li><a href="/">首页</a></li>
+        {dede:channel type='top' row='10'}
+        <li><a href="[field:typeurl/]">[field:typename/]</a></li>
+        {/dede:channel}
+    </ul>
+</div>
+<div class="m-screen"></div>
+<script>
+	$(function(){
+		$('.m-nav').click(function(){	
+			$('.nav-box').css('right','0');
+			$('.m-screen').show();
+		});
+		$('.m-screen').click(function(){
+			$(this).hide();
+			$('.nav-box').css('right','-40%');
+		})
+	})
+</script>
